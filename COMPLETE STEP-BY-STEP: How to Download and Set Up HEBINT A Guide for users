@@ -1,0 +1,194 @@
+PART 1: DOWNLOADING THE TOOL:
+# Open your terminal (Linux/macOS) or Command Prompt (Windows)
+
+# 1. Clone the repository
+git clone https://github.com/YOUR_USERNAME/hebint.git
+
+# 2. Enter the folder
+cd hebint
+
+# 3. Look at what's inside
+ls -la  # Linux/macOS
+# or
+dir     # Windows
+
+Option 2: Download as ZIP:
+# 1. Go to the GitHub page in your browser
+https://github.com/YOUR_USERNAME/hebint
+
+# 2. Click the green "Code" button
+# 3. Click "Download ZIP"
+# 4. Extract the ZIP file to your desired location
+#    - On Linux: right-click → Extract Here
+#    - On Windows: right-click → Extract All
+
+# 5. Open terminal and go to the extracted folder
+cd ~/Downloads/hebint-main  # Linux/macOS
+# or
+cd C:\Users\YourName\Downloads\hebint-main  # Windows
+
+ PART 2: SETTING UP THE TOOL:
+python --version
+# Should show Python 3.8 or higher
+
+# If you have multiple Python versions, try:
+python3 --version  # Linux/macOS
+# or
+py --version       # Windows
+
+
+Step 2.2: Create Virtual Environment
+For Linux/macOS:
+
+# Create virtual environment
+python3 -m venv venv
+
+# Activate it
+source venv/bin/activate
+
+# You should see (venv) at the beginning of your terminal prompt
+
+For Windows:
+
+# Create virtual environment
+python -m venv venv
+
+# Activate it
+venv\Scripts\activate
+
+# You should see (venv) at the beginning of your terminal prompt
+
+Step 2.3: Install Dependencies:
+# Make sure your virtual environment is activated (you see (venv))
+pip install -r requirements.txt
+
+# This installs:
+# - requests (for web requests)
+# - colorama (for colored output)
+# - tqdm (for progress bars)
+
+step 2.4: Verify Installation:
+# Check that all packages installed
+pip list
+
+# You should see:
+# requests   x.x.x
+# colorama   x.x.x
+# tqdm       x.x.x
+
+Step 3.1: Basic Run:
+# Make sure you're in the hebint folder
+pwd  # Should show .../hebint
+
+# Make sure virtual environment is activated (you see (venv))
+
+# Run the tool
+python modules/hebint_username.py
+
+Step 3.2: Using the Launcher Script (Linux/macOS):
+# Make the launcher executable
+chmod +x hebint
+
+# Run it
+./hebint
+
+Step 3.3: What You'll See:
+👤 Advanced Username Module Ready!
+✅ Loaded 72 platforms
+Enter username to search: 
+
+ MAKING IT A GLOBAL COMMAND:
+# Method 1: Create an alias (easiest)
+echo "alias hebint='cd ~/path/to/hebint && source venv/bin/activate && python modules/hebint_username.py'" >> ~/.bashrc
+source ~/.bashrc
+
+# Now use from anywhere
+hebint
+
+If you get "ModuleNotFoundError":
+pip install -r requirements.txt --upgrade
+
+If virtual environment won't activate:
+# Recreate it
+deactivate  # if partially activated
+rm -rf venv  # Linux/macOS
+# or
+rmdir /s venv  # Windows
+
+python3 -m venv venv  # Linux/macOS
+# or
+python -m venv venv   # Windows
+
+source venv/bin/activate  # Linux/macOS
+# or
+venv\Scripts\activate     # Windows
+
+pip install -r requirements.txt
+
+If you get "Permission denied":
+chmod +x modules/hebint_username.py
+chmod +x hebint
+
+If you can't find the data folder:
+# It's created automatically when you first run the tool
+# If it doesn't exist, create it manually:
+mkdir -p data
+
+QUICK REFERENCE CARD:
+# Download
+git clone https://github.com/YOUR_USERNAME/hebint.git
+cd hebint
+
+# Setup
+python3 -m venv venv
+source venv/bin/activate          # Linux/macOS
+# venv\Scripts\activate           # Windows
+pip install -r requirements.txt
+
+# Run
+python modules/hebint_username.py
+
+# Take screenshots (you choose where to save them)
+# I recommend: ~/hebint/screenshots/
+
+# View results
+ls data/
+cat data/username_latest.json
+
+# Global command
+echo "alias hebint='cd ~/hebint && source venv/bin/activate && python modules/hebint_username.py'" >> ~/.bashrc
+source ~/.bashrc
+hebint
+
+CHECKLIST FOR USERS:
+
+Downloaded the tool (clone or ZIP)
+Python 3.8+ installed
+Created virtual environment
+Activated virtual environment
+Installed dependencies
+Ran the tool successfully
+Took screenshots of results
+Saved screenshots to screenshots/ folder
+Viewed JSON results in data/ folder
+(Optional) Created global command
+
+
+YOU'RE ALL SET!
+Now you have:
+
+✅ HEBINT tool downloaded and working
+
+✅ Screenshots saved for documentation
+
+✅ Results saved in JSON format
+
+✅ Global command (optional)
+
+Happy Investigating! 🕵️
+
+For more commands and detailed usage, check the COMMANDS.md file.
+
+
+
+
