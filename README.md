@@ -1,11 +1,7 @@
 # 🕵️ HEBINT - Advanced OSINT Investigation Tool
 
 <div align="center">
-  
-  [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)](https://python.org)
-  [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
-  [![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Windows-orange?style=for-the-badge)]()
-  [![OSINT](https://img.shields.io/badge/OSINT-Username%20%7C%20Email%20%7C%20Phone-red?style=for-the-badge)]()
+    
   
   <h3>🔍 Search 150+ platforms for usernames, emails, and phone numbers</h3>
   <p><i>Built with ❤️ in Beirut, Lebanon</i></p>
