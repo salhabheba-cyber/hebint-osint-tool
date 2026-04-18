@@ -69,6 +69,52 @@
 
 ---
 
+# 🕵️ HEBINT-OSINT-Tool - Open Source Intelligence Investigation Platform
+
+## Objective
+Build a comprehensive OSINT (Open Source Intelligence) tool that automates the investigation of phone numbers, emails, and usernames across 150+ platforms including social media, coding sites, gaming platforms, and Arabic-specific websites.
+
+## Key Skills Demonstrated
+- OSINT investigation techniques (phone, email, username)
+- API integration (Truecaller, HaveIBeenPwned, GitHub API)
+- Web scraping and data correlation
+- Bilingual report generation (Arabic/English)
+- Concurrent processing for fast searching
+- Database management for spam reports
+
+## My Process
+1. **Phone Module**: Parsed phone numbers to extract country, carrier, line type, WhatsApp/Telegram presence
+2. **Email Module**: Validated emails, checked domain MX records, Gravatar profiles, and data breaches
+3. **Username Module**: Searched 100+ platforms concurrently for username existence
+4. **Arabic Platform Support**: Added unique support for Arabic websites (Anazahra, ArabChat, Mawada, DubaiChat)
+5. **Reporting**: Generated JSON, HTML, and CSV reports with bilingual support
+
+## Tools Used
+- Python 3.11, Requests, JSON, concurrent.futures
+- Phonenumbers library, DNS resolver, Hashlib
+- Colorama for colored output
+- Streamlit for web interface (planned)
+- SQLite for database storage
+
+## Key Features
+- ✅ **Phone Number Lookup**: Country, carrier, line type, WhatsApp/Telegram, spam reports
+- ✅ **Email Investigation**: Validation, MX records, Gravatar, data breaches
+- ✅ **Username Search**: 150+ platforms including unique Arabic sites
+- ✅ **Bilingual Reports**: Arabic and English support
+- ✅ **Concurrent Searching**: 20+ simultaneous checks for speed
+
+## What I Learned
+- OSINT requires multiple data sources for accuracy
+- Arabic platform support is a unique differentiator
+- Concurrent processing dramatically improves performance
+- Color-coded output improves readability for SOC analysts
+- JSON export enables further analysis and integration
+
+## Challenges Overcome
+- Handling API rate limits and blocks (LinkedIn, Truecaller)
+- Processing concurrent requests efficiently
+- Managing different data formats from various platforms
+- Implementing retry logic for failed requests
 
 
 ![Uploading email.py.png…]()
