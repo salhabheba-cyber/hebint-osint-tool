@@ -50,7 +50,7 @@
 
 **HEBINT** (pronounced "Heh-bint", short for **He**ba **B**eirut **INT**elligence) is a powerful OSINT tool that automates the process of searching for usernames, emails, and phone numbers across **150+ platforms**. It's designed for security researchers, investigators, and cybersecurity professionals.
 
-### ✨ Key Features
+
 
 | Feature | Description |
 |---------|-------------|
@@ -92,12 +92,17 @@ Build a comprehensive OSINT (Open Source Intelligence) tool that automates the i
 - Streamlit for web interface (planned)
 - SQLite for database storage
 
-## Key Features
-- ✅ **Phone Number Lookup**: Country, carrier, line type, WhatsApp/Telegram, spam reports
-- ✅ **Email Investigation**: Validation, MX records, Gravatar, data breaches
-- ✅ **Username Search**: 150+ platforms including unique Arabic sites
-- ✅ **Bilingual Reports**: Arabic and English support
-- ✅ **Concurrent Searching**: 20+ simultaneous checks for speed
+| Feature | Description |
+|---------|-------------|
+| **150+ Platforms** | Social media, coding sites, gaming, Arabic platforms |
+| **Arabic Support** | **UNIQUE!** Searches Anazahra, ArabChat, Mawada, DubaiChat |
+| **Colored Output** | Beautiful terminal output with color-coded results |
+| **JSON Export** | All results saved to structured JSON files |
+| **Facebook Links** | Always visible even without profiles |
+| **Concurrent Checks** | 20 simultaneous connections for speed |
+| **Email Module** | Email investigation capabilities |
+| **Phone Module** | Phone number lookup |
+
 
 ## What I Learned
 - OSINT requires multiple data sources for accuracy
